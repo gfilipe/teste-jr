@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/teste-jr/public/'),
+    'url' => env('APP_URL', 'http://localhost/teste-jr/'),
 
     /*
     |--------------------------------------------------------------------------

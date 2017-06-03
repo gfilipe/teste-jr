@@ -1,0 +1,31 @@
+INSTRUÇÕES PARA RODAR A API FEITA PELO GABRIEL FILIPE CARVALHO:
+
+- foi utilizado: 
+	- WAMP SERVER 2.5
+	- Laravel 5.2.45
+	- php versão 5.5.12
+	- mysql versão 5.6.17
+	- apache versão 2.4.9
+	- S.O Windows 7 Professional
+
+- criar dentro da pasta "htdocs" ou "www", uma pasta chamada teste-jr e clonar o teste dentro dela
+
+- Alterar os dados do arquivo ".env", referente ao acesso ao banco de dados Mysql
+
+- na raiz do laravel, alterar o arquivo "config/database.php" referente ao acesso ao banco de dados Mysql
+
+- se precisar altere o arquivo "config/app.php" 'url' => env('APP_URL', 'http://localhost/teste-jr/') caso use uma outra
+estrutura de pastas para rodar esse projeto.
+
+- depois de configurar todo o banco de dados Mysql no Laravel, será preciso executar a instalação das migrations ("database/migrations"), 
+através dos comandos "php artisan migrate:install" e depois "php artisan migrate:refresh", na pasta raiz do projeto
+
+- foi utilizado o composer para trabalhar com o laravel e suas dependencias
+
+Segue abaixo as URL para que possam começar a me avaliar:
+
+- A Página que descreve a "documentação" da API
+http://localhost/teste-jr/public/vendas
+
+- A API propriamente dita
+http://localhost/teste-jr/public/vendas/{nome_vendedor}/{email}/{nome_produto}/{valor_venda}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>API Vendas</title>
+        <title>API Vendas - Gabriel Filipe Carvalho</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -61,12 +61,18 @@
 				font-family: arial !important;
 				font-size: 14px;
 			}
+			.autor{
+				color: purple;
+				font-family: arial !important;
+				font-size: 12px;
+			}
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <div class="title">Documentação API para inserção de vendas</div>
+				<small class="autor">criado por: Gabriel Filipe Carvalho</small>
 				<br/><br/>
 				<span style="font-weight: bold; font-family: arial;">URL da API:</span>
 				<p>http://localhost/teste-jr/public/vendas/<span class="vendedor">{nome_vendedor}</span>/<span class="email">{email}</span>/<span class="produto">{nome_produto}</span>/<span class="valor">{valor_venda}</span></p>
