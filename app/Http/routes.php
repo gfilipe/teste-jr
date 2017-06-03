@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('vendas', function () {
-    return view('vendas');
-});
+Route::get('vendas','VendaController@index');
+
+Route::get('vendas/{nome_vendedor}/{email}/{produto}/{valor_venda}', [
+    'as' => 'vendas.cadastrar',
+    'uses' => 'VendaController@cadastrar'
+]);
